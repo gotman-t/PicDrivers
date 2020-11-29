@@ -1,7 +1,6 @@
 #include <xc.h>
 #include "I2c.h"
 
-#define I2C_FREQ (100000)
 #define I2C_TIME_UP (5)    // [ms]
 
 typedef bool(*ConditionFunc)(void);
@@ -23,7 +22,7 @@ static bool IsSendFinished(void);
 static unsigned char m_Count;
 
 void I2c_Init(void) {
-    SSPADD = (I2C_FOSC / (4 * I2C_FREQ)) - 1;
+    SSPADD = k_SspAdd;
 
     SSP1CON1bits.SSPM = 0b1000; // I2Cマスタモード
     SSP1CON1bits.SSPEN = 1; // シリアルポート有効化

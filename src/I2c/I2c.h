@@ -2,7 +2,7 @@
 #define I2C_H
 
 #include <stdbool.h>
-#include "I2c_Cfg.h"
+#include "Config/I2c_Cfg.h"
 
 typedef enum {
     I2C_SUCCESS,
