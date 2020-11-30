@@ -35,6 +35,7 @@ TODO
 This type has following Definitions.
 
 |Definition|Description|
+|-|-|
 |I2C_SUCCESS|I2c communication is Successful|
 |I2C_FAILURE|I2c communication is failed|
 
