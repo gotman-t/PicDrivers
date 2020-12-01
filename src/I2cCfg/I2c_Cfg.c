@@ -1,5 +1,3 @@
-#include "Driver/Mcu/Mcu.h"
-
 #define I2C_FOSC (8000000)
 #define I2C_FREQ (100000)
 
