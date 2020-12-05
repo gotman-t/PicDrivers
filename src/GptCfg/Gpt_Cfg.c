@@ -1,7 +1,7 @@
 #include <stddef.h>
-#include "Gpt.h"
+#include "Gpt/Gpt.h"
+#include "Gpt/Gpt_Internal.h"
 #include "Config/Gpt_Cfg.h"
-#include "Gpt_Internal.h"
 
 #define ARRAY_SIZE(array) (sizeof(array)/sizeof(array[0]))
 
