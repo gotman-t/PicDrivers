@@ -1,8 +1,8 @@
 #ifndef DIO_INTERNAL_H
 #define DIO_INTERNAL_H
 
-typedef byte(*ReadFunc)(void);
-typedef void(*WriteFunc)(byte);
+typedef DioLevelType(*ReadFunc)(void);
+typedef void(*WriteFunc)(DioLevelType);
 
 typedef struct {
     ReadFunc Read;

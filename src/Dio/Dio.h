@@ -3,13 +3,17 @@
 
 #include "Config/Dio_Cfg.h"
 
-#define Dio_Init()  // 初期化処理なし
+typedef enum {
+    LOW,
+    HIGH,
+} DioLevelType;
 
 #ifdef  __cplusplus
 extern "C" {
 #endif
-    byte Dio_Read(DioType pin);
-    void Dio_Write(DioType pin, byte value);
+    void Dio_Init(void);
+    DioLevelType Dio_Read(DioType pin);
+    void Dio_Write(DioType pin, DioLevelType value);
 #ifdef  __cplusplus
 }
 #endif
