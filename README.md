@@ -1,6 +1,29 @@
 # PicDrivers
 Mcu drivers for PIC series.
 
+## Gpt Driver
+### NOTE
+This driver only works with "PIC16 (L) F1705 / 9".
+
+### Path
+* src/Gpt
+* src/GptCfg
+
+### API
+#### Gpt_Init
+```
+void Gpt_Init(void);
+```
+
+Initialize Gpt.
+
+#### Gpt_StartTimer
+```
+void Gpt_StartTimer(GptTimerType timer, unsigned char time);
+```
+
+Start the multi porpose timer.
+
 ## I2c Driver
 ### NOTE
 This driver only works with "PIC16 (L) F1705 / 9".
