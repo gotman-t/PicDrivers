@@ -4,14 +4,8 @@
 typedef enum {
     DIO_RA2,
     DIO_RA4,
-    DIO_RA5,
-    DIO_RC2,
-    DIO_RC3,
-    DIO_RC4,
-    DIO_RC5,
-} DioType; // ïœçXéûÇÕ NUM_DIO ÇÃíËã`ïœçXÇ‡é¿é{Ç∑ÇÈÇ±Ç∆
-
-#define NUM_DIO (DIO_RC5 + 1)
+    NUM_DIO,
+} DioType; // NOTE : NEED UPDATE DEFINITION OF "NUM_DIO"
 
 #endif  /* DIO_CFG_H */
 
